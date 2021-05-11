@@ -1,4 +1,5 @@
 const contractName = 'dev-1619096754606-7426958';
+require('dotenv').config();
 
 module.exports = function getConfig() {
 	let config = {

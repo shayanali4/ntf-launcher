@@ -1,7 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nearAPI = require('near-api-js');
-const getConfig = require('../src/config');
+const getConfig = require('./config');
 const { withNear } = require('./middleware/near');
 const { near, contractAccount } = require('./utils/near-utils');
 const { contractName, networkId, GAS, contractMethods, GUESTS_ACCOUNT_SECRET } = getConfig();
@@ -16,7 +17,7 @@ const {
 } = nearAPI;
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.port || 3000;
 
 app.use(cors());
 app.use(express.json());
