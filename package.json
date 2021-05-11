@@ -4,7 +4,7 @@
     "description": "near utility server",
     "main": "app.js",
     "scripts": {
-        "start": "set REACT_APP_ENV=dev && nodemon app.js --config ./nodemon.json",
+        "start": "set REACT_APP_ENV=dev && node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "mattlockyer",
